@@ -52,6 +52,7 @@ export const cardSlice = createSlice({
       state.dataArray.forEach((item, index) => {
         if (
           action.payload.title === item.title &&
+          // eslint-disable-next-line eqeqeq
           item.title != "Pledge with no reward"
         ) {
           item.stock = item.stock - item.decreaseBy;

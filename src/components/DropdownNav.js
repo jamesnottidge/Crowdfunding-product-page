@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "../component-styles/DropdownNav.css";
 
 export const DropdownNav = (props) => {
