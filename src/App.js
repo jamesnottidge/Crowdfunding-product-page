@@ -1,7 +1,4 @@
-import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
-import { Card, Image, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import imageheromobile from "./Img/image-hero-mobile.jpg";
 import imageherodesktop from "./Img/image-hero-desktop.jpg";
 import { Toggle } from "./components/Toggle";
@@ -18,10 +15,7 @@ import {
 } from "./features/counter/cardSlice";
 import { HomeCard } from "./components/HomeCard";
 import { Modal } from "./components/Modal";
-import {
-  setModalCompleted,
-  toggleModalShowing,
-} from "./features/counter/modalSlice";
+import { toggleModalShowing } from "./features/counter/modalSlice";
 import { selectModalShowing } from "./features/counter/modalSlice";
 function App() {
   const dataArray = useSelector(selectCards);

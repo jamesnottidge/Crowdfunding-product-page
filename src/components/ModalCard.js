@@ -1,6 +1,6 @@
-import React, { useMemo, useRef, useState } from "react";
-import { Card, Button } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useRef, useState } from "react";
+import { Card } from "react-bootstrap";
+import { useDispatch } from "react-redux";
 import { decreaseStock } from "../features/counter/cardSlice";
 import { setModalCompleted } from "../features/counter/modalSlice";
 import "../component-styles/ModalCard.css";

@@ -2,27 +2,24 @@ import React from "react";
 import { ModalCard } from "./ModalCard";
 import { useSelector } from "react-redux";
 import { selectCards } from "../features/counter/cardSlice";
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "../component-styles/Modal.css";
 import { useDispatch } from "react-redux";
 import {
-  selectModalShowing,
   selectModalCompleted,
   toggleModalShowing,
   setModalCompleted,
 } from "../features/counter/modalSlice";
-import { useState } from "react";
 
 export const Modal = (props) => {
   const dataArray = useSelector(selectCards);
-  const modalShowing = useSelector(selectModalShowing);
   const modalCompleted = useSelector(selectModalCompleted);
-  // const [completed, setCompleted] = useState(false);
   const dispatch = useDispatch();
   const onModalClose = () => {
     dispatch(toggleModalShowing());
     dispatch(setModalCompleted(false));
   };
+
   return (
     <Card className="modal-custom fixed-top" onClick={() => onModalClose()}>
       {modalCompleted ? (
