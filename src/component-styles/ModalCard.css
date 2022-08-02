@@ -1,0 +1,72 @@
+.form-check-input ~ footer {
+    display: none;
+}
+
+.form-check-input:checked ~ footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 3;
+}
+
+
+.form-check-label::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.modal-card-body {
+    max-width: 100%;
+}
+
+.pledge-footer input{
+    border: 0px;
+    margin: 1rem 1rem;
+    z-index: 2;
+}
+
+.pledge-footer button{
+    z-index: 2;
+}
+
+.fixed-pledge-button {
+
+}
+
+.fixed-pledge-button span {
+    
+}
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+
+.continue-button {
+    color: white;
+}
+
+/* pledge-footer input:focus {
+    outline: 0px;
+} */
+
+@media (min-width: 40rem) {
+    .pledge-footer p {
+        margin-left: auto;
+        display: flex;
+    }
+
+    .pledge-footer input {
+        margin: 0rem 0rem;
+
+    }
+}

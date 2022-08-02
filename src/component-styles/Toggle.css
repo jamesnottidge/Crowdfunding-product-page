@@ -1,0 +1,120 @@
+form {
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin-left: auto;
+}
+.switch {
+  position: relative;
+  top: 0.2rem;
+  display: inline-block;
+  width: 10.5rem;
+  height: 3.3rem;
+}
+
+.switch-mobile{
+  position: relative;
+  display: inline-block;
+  /* min-height: 3.3rem; */
+  /* width: 3.3rem; */
+  /* height: 100%; */
+}
+
+.switch-mobile input, .switch input {display: none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 1.65rem;
+  padding: 0rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 1;
+}
+
+.mobile-toggle {
+  /* position: absolute; */
+  cursor: pointer;
+  border-radius: 1.65rem;
+  padding: 0rem;
+  /* top: 0rem;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 1;
+}
+
+.mobile-toggle::before {
+  /* position: absolute; */
+  content: "";
+  border-radius: 50%;
+  height: 3.3rem;
+  width: 3.3rem;
+  right: 0rem;
+  left: 0rem;
+  bottom: 0px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider-before {
+  position: absolute;
+  border-radius: 50%;
+  height: 3.3rem;
+  width: 3.3rem;
+  left: 0rem;
+  bottom: 0px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 2;
+
+}
+
+.slider::after{
+    position: absolute;
+    content: "Bookmark";
+    padding-bottom: 0.5rem;
+    color: white;
+    font-weight: 700;
+    height: 26px;
+    width: 70%;
+    right:6px;
+    bottom: 4px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: -1;
+}
+
+input:checked + .slider {
+  /* background-color: hsl(176, 50%, 47%);; */
+}
+
+input:checked + .mobile-toggle::before {
+    background-color: #56f321;
+}
+
+input:checked + .slider::after {
+    content: "Bookmarked";
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider-before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(115px);
+}
+
+input:checked + span .color-change {
+    fill: hsl(176, 50%, 47%)
+}
+

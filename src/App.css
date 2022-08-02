@@ -1,39 +1,117 @@
+*{
+    margin: 0;
+}
 .App {
-  text-align: center;
+  overflow-x: scroll;
+  padding: 0;
+}
+.main {
+    margin-top: -6rem;
+    max-width: 45rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-image {
+    max-height: 16rem;
+    min-width:100vw;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.back-button {
+
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.green-button{
+    background-color: hsl(176, 50%, 47%);
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.font-weight-700 {
+    font-weight: 700;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.font-weight-500 {
+    font-weight: 500;
+}
+.background-none {
+    background: none;
+}
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.light-green {
+    color: hsl(176, 50%, 47%);
+}
+
+.light-gray {
+    color: hsl(0, 0%, 48%);
+}
+
+.biggest {
+    font-size: 1.2rem;
+}
+
+.really-large {
+    font-size: 2.5rem;
+}
+
+.bigger {
+    font-size: 1.05rem;
+}
+
+
+
+
+.masterkraft-logo {
+    top: -2rem;
+    left: 45%;
+}
+.top-card-bottom {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.second-segment-body ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 1rem;
+}
+
+.second-segment-body ul li {
+    max-width: 15rem;
+    width: 100%;
+}
+
+.second-segment-body ul li hr {
+    max-width: 5rem;
+    width: 100%;
+    margin: 1.2rem auto;
+}
+
+@media (min-width: 576px) {
+    .second-segment-body ul {
+        flex-direction: row;
+    }
+
+    .second-segment-body ul li {
+        padding: 0 1rem;
+        border-right: 1px solid gray;
+    }
+    
+    .second-segment-body ul .exception {
+        border-right: 0px;
+    }
+    .second-segment-body ul li hr {
+        display: none;
+    }
+
+}
+
+.disabled {
+    opacity: 60%;
 }

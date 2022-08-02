@@ -1,0 +1,14 @@
+.list-dropdown-item{
+    text-align: left;
+}
+.navbar-list{
+    background-color: none;
+}
+
+.dropdown-list-group li{
+    background-color: none;
+}
+
+.background-none {
+    background: none;
+}

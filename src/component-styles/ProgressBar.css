@@ -1,0 +1,13 @@
+.main-progress{
+    max-height: 0.7rem;
+    height: 100%;
+    background-color: rgb(233, 224, 224);
+    border-radius: 2rem;
+}
+
+.completed-progress {
+    max-height: inherit;
+    background-color: green;
+    border-radius: inherit;
+    text-align: right;
+}
